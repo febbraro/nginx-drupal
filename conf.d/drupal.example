@@ -1,0 +1,15 @@
+## Virtual host for Drupal 7 general development
+
+server {
+    listen 8080; # IPv4
+    server_name drupal.dev;
+
+    ## Filesystem root of the site and index.
+    root /Users/frank/web/drupal/html;
+    index index.php;
+    include drupal.conf;
+    include drupal_install.conf;
+
+} # HTTP server
+
+
